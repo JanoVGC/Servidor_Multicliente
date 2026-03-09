@@ -4,10 +4,10 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
 
-public class FilServidor extends Thread {
+public class FilClient extends Thread {
     private Socket socket;
 
-    public FilServidor(Socket socket) {
+    public FilClient(Socket socket) {
         this.socket = socket;
     }
 
