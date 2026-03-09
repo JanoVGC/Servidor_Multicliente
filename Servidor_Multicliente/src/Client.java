@@ -4,6 +4,16 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
 
+
+/**
+ * CLASSE CLIENTE
+ * * Aquesta classe representa el costat del client en l'arquitectura socket.
+ * S'encarrega d'establir una connexió amb l'adreça IP del servidor (127.0.0.1)
+ * i el port acordat (5000).
+ * La seva funció és enviar una petició de dades al servidor i esperar una resposta.
+ * En una arquitectura multiclient, podem executar moltes instàncies d'aquesta
+ * classe alhora per verificar que el servidor les gestiona totes en paral·lel.
+ */
 public class Client {
     public static void main(String[] args) {
 

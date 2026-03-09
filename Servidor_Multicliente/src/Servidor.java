@@ -2,8 +2,16 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * CLASSE SERVIDOR
+ * * Aquesta classe actua com a node central del sistema.
+ * Implementa un bucle infinit per escoltar el port 5000 de manera constant.
+ * La seva funció principal és acceptar connexions de nous clients i,
+ * en lloc de gestionar la comunicació directament (el que bloquejaria el servidor),
+ * delega cada connexió a un fil independent (FilServidor).
+ * Això permet que el servidor sigui MULTICLIENT i pugui atendre
+ * diverses peticions simultàniament.
+ */
 public class Servidor {
     public static void main(String[] args) {
         try {
